@@ -48,8 +48,8 @@ const Services = () => {
       </header>
       <h2 className="text-3xl text-center mb-10">Our Company Solutions</h2>
 
-      <div className="services-grid flex flex-wrap justify-center items-center gap-6 px-4">
-        <div className="service-item service-item-1 cursor-pointer relative p-6 w-full lg:w-[30%]">
+      <div className="services-grid ">
+        <div className="service-item service-item-1 cursor-pointer relative p-6">
           <img src={Solar} alt="Solar Solutions" className="w-full rounded-lg" />
           <h3 className="service-title text-2xl text-center mt-4">Solar Solutions</h3>
           <div className="overlay absolute top-0 left-0 w-full h-full bg-black opacity-0 hover:opacity-75 transition-opacity duration-300 flex justify-center items-center">
@@ -60,7 +60,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service-item service-item-2 cursor-pointer relative p-6 w-full lg:w-[30%]">
+        <div className="service-item ">
           <img src={SolarG} alt="Solar Geyser Installations" className="w-full rounded-lg" />
           <h3 className="service-title text-2xl text-center mt-4">Solar Geyser Installations</h3>
           <div className="overlay absolute top-0 left-0 w-full h-full bg-black opacity-0 hover:opacity-75 transition-opacity duration-300 flex justify-center items-center">
@@ -71,7 +71,7 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="service-item service-item-3 cursor-pointer relative p-6 w-full lg:w-[30%]">
+        <div className="service-item  ">
           <img src={SolarC} alt="Solar Energy Consultation" className="w-full rounded-lg" />
           <h3 className="service-title text-2xl text-center mt-4">Solar Energy Consultation</h3>
           <div className="overlay absolute top-0 left-0 w-full h-full bg-black opacity-0 hover:opacity-75 transition-opacity duration-300 flex justify-center items-center">

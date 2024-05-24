@@ -111,10 +111,10 @@ const Carousel = () => {
           </div>
 
           <div className="flex items-center text-white">
-            <div className="">
+            <div className="Social_Media hidden">
               <a
                 href="#"
-                className="icon text-black text-2em m-60px mr-20 text-2xl"
+                className="icon text-black text-2em m-60px  mr-20 text-2xl"
               >
                 <FontAwesomeIcon
                   icon={faFacebook}
@@ -127,7 +127,7 @@ const Carousel = () => {
             </div>
             <FontAwesomeIcon
               icon={faBars}
-              className="text-[40px] cursor-pointer hidden Readjust_Half_Screen_Menu"
+              className="text-[40px] cursor-pointer hidden xl:flex Readjust_Half_Screen_Menu"
               onClick={() => setIsOverlayVisible(true)}
             />
             <div
@@ -142,7 +142,7 @@ const Carousel = () => {
                 </h1>
                 <FontAwesomeIcon
                   icon={faBars}
-                  className="text-[40px] cursor-pointer absolute top-[96px] right-4"
+                  className="text-[40px] cursor-pointer absolute top-[30px] right-4"
                   onClick={() => setIsOverlayVisible(false)}
                 />
               </header>

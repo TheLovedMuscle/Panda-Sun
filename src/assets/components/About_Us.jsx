@@ -64,9 +64,12 @@ const AboutUs = () => {
             <h3 className="text-2xl mb-4">
               The <span className="text-green-600">Future</span> of Solar Energy
             </h3>
-            <div className="flex items-center text-2xl mb-4">
-              <FontAwesomeIcon icon={faPhone} className="text-green-600 text-4xl mr-2" />
-              <span>+27 69 118 4049</span><FontAwesomeIcon icon={faEnvelope} className="text-green-600 text-4xl ml-2" /> <span> gosolarco@gmail.com </span>
+
+            <div className=" MobileAboutUs items-center text-2xl mb-8">
+              <FontAwesomeIcon icon={faPhone} className="text-green-600  text-4xl mr-2 mb-" />
+              <span>+27 69 118 4049</span>
+              <br />
+              <FontAwesomeIcon icon={faEnvelope} className="text-green-600 text-4xl ml-2" /> <span className=""> gosolarco@gmail.com </span>
             </div>
             <button className="call-us-button bg-green-600 w-48 h-12 rounded-full text-white text-lg">
               Talk To Us

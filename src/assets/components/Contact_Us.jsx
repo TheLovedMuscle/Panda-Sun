@@ -58,7 +58,7 @@ const Contact_Us = () => {
       </p>
 
       <div className="Readjust_Half_Screen_C  flex justify-around p-4">
-        <div className="w-1/2 p-4">
+        <div className="mr-20 w-1/2 p-4">
           <form className="contact-us-form" onSubmit={handleSubmit}>
             <div className="form-group relative">
               <label htmlFor="email" className="label text-2xl ml-2">Email</label>
@@ -137,7 +137,7 @@ const Contact_Us = () => {
           </form>
         </div>
 
-        <div className="w-1/2 p-4  flex flex-col items-center">
+        <div className=" SImage hidden w-1/2 p-4flex-col items-center">
           <img
             src={Contact}
             alt="Contact"
@@ -147,6 +147,8 @@ const Contact_Us = () => {
             The <span className="text-orange-600">Power</span> Of The Sun In Your Hands
           </h1>
         </div>
+
+
       </div>
     </div>
   );

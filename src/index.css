@@ -337,8 +337,91 @@ B
   border: none;
   border-radius: 25px;
   cursor: pointer;
+
 }
 
+
+/* Media Queries for Mobible */
+
+/* Media query for iPhone 12 Pro Max */
+
+
+/* Media query for devices with max-width 650px */
+/* Media query for devices with max-width 750px */
+@media only screen and (max-width: 750px) {
+  .services-grid {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  }
+
+  .service-item {
+    max-width: 80%; /* Ensure each item takes full width in the column layout */
+  }
+
+  .service-item img {
+    width: 100%; /* Ensure the images take the full width of their container */
+    height: auto;
+  }
+}
+
+/* Existing media query for screens larger than 654px */
+@media only screen and (min-width: 654px) {
+  .Social_Media {
+    display: block;
+  }
+
+  .MobileAboutUs {
+    display: flex;
+  }
+
+ 
+}
+
+
+/* Base styles */
+.Container, .Preview {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.Container.hidden, .Preview.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.Container.block, .Preview.block {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Media query for screens 650px and less */
+@media only screen and (max-width: 650px) {
+  .Preview {
+    display: block;
+  }
+
+  .submit-button 
+  {
+    margin-left: 60px;
+  }
+
+
+}
+
+/* Media query for screens wider than 650px */
+@media only screen and (min-width: 651px) {
+  .Preview {
+    display: none;
+  }
+
+  .SImage
+  {
+    display: flex;
+  }
+
+}
 
 
 

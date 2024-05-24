@@ -36,9 +36,6 @@ const Footer = () => {
      <a href="#" className="icon mr-20 text-2xl ">
        <FontAwesomeIcon icon={faInstagram} />
      </a>
-     <a href="#" className="icon mr-20 text-2xl ">
-       <FontAwesomeIcon icon={faTwitter} />
-     </a>
    </div>
 </div></div>
   )
