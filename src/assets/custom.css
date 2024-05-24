@@ -1,0 +1,97 @@
+/* custom.css */
+.tag 
+{
+ width: 120px;
+ height: 40px;
+ background-color: transparent;
+ opacity: 60%; 
+ border-radius: 25px;
+ color: black;
+ transition: opacity 3s ease-in-out, transform 2s ease-in-out;
+}
+
+.tag:hover
+{
+    opacity: 100%;
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+}
+  
+
+/* Custom CSS for the hover effect */
+
+.tags {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding-bottom: 5px; /* Adjust this value according to your design */
+  }
+  
+  /* Line effect */
+  .tags::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Height of the line */
+    background-color: orange; /* Color of the line */
+    transition: width 2s ease-in-out; /* Transition for width property */
+  }
+  
+  /* Hover effect */
+  .tags:hover::after {
+    width: 100%; /* Width of the line when hovered */
+  }
+  
+  /* Animation for line disappearing */
+  .tags::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px; /* Height of the line */
+    background-color: red; /* Color of the line */
+    transition: width 2s ease-in-out; /* Transition for width property */
+    z-index: -1; /* Ensure the line appears behind the main line */
+  }
+  
+  /* Animation for line disappearing when hover ends */
+  .tags:hover::before {
+    width: 60%; /* Width of the line when hovered */
+  }
+
+
+  .icon 
+{
+ transition:  transform 2s ease-in-out;
+}
+
+.icon:hover
+{
+    transform: scale(1.3);
+}
+
+.Uline
+{
+  text-decoration: underline;
+}
+
+.centered
+{
+  margin-inline: auto;
+}
+
+.Minimum
+{
+  min-height:100vh;
+  padding:50px 8%
+}
+
+.Grid-Layout
+{
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 30px;
+}

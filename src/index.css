@@ -1,0 +1,344 @@
+@import url("@fortawesome/fontawesome-free/css/all.css");
+@import '../src/assets/custom.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.centered
+{margin-inline: auto;}
+
+.Hover {
+  color: aliceblue;
+  transition: color 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.Hover:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+
+.ButtonHover {
+  transition: transform 2s ease-in-out;
+}
+
+.ButtonHover:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .Item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+  .Readjust_Half_Screen {
+    display: flex;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1280px) {
+  .Readjust_Half_Screen_C {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .Readjust_Half_Screen_Menu {
+    display: block;
+  }
+}
+
+.Back
+{
+   margin-inline: auto;
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .Services {
+    display: block;
+    margin-left: 200px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1280px) {
+  .Services img {
+    width: 100%;
+  }
+}
+
+.image {
+  animation: Fader ease-in-out 2s;
+  transition: opacity ease-in-out 2s;
+}
+
+@keyframes Fader {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.ParaFont {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-container {
+  background-color: rgba(0, 0, 0, 0.5); /* Example custom style */
+  height: 100px;
+}
+
+.Tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ButtonHover {
+  background-color: orange;
+}
+
+.Hover {
+  color: aliceblue;
+}
+
+.IMG
+{
+  text-align: center;
+  transition: 2s transform ease-in-out;
+}
+
+.IMG:hover
+{
+  transform: scale(1.2);
+}
+
+
+
+.Logos {
+  padding: 60px 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.B
+{
+  background-color: rgb(8, 8, 21);
+}
+
+.Logos-slide {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.Hey {
+  margin-inline: auto;
+}
+
+B
+{
+  background-color:rgb(5, 5, 17);
+}
+
+/* New classes for About_Us.jsx */
+.about-us-container {
+  background-color: #f8f9fa; /* Example background color */
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-section img {
+  border-radius: 8px; /* Example style */
+}
+
+.text-section {
+  padding: 20px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.call-us-button {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.call-us-button:hover {
+  background-color: #2d6a4f; /* Darker green on hover */
+}
+
+/* New classes for Services.jsx */
+.services-container {
+  background-color: #020212; /* Example background color */
+  color: white;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.service-item {
+  position: relative;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 30%;
+  cursor: pointer;
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 8px; /* Example style */
+}
+
+.service-title {
+  margin-top: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay:hover {
+  opacity: 0.75;
+}
+
+.overlay-content {
+  text-align: center;
+}
+
+.overlay-content h4 {
+  font-size: 1.875rem;
+}
+
+.overlay-content p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+
+.Container
+{
+  padding:50px 8%;
+}
+
+.gallery
+{
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-gap: 30px;
+  align-items: center;
+}
+
+.gallery img
+{
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 50px;
+  
+}
+
+
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.C
+{
+  width: 80%;
+  display: flex;
+  margin-right: auto;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.label {
+  margin-bottom: 5px;
+}
+.input {
+  background-color: #0a0e1d;
+  width: 300px; /* Set the width of all inputs to be the same */
+  padding: 10px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.Input {
+  background-color: #0a0e1d;
+  width: 300px; /* Set the width of all inputs to be the same */
+  padding: 10px;
+  height: 200px;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 15px;
+  color:white;
+}
+
+.input[type="textarea"] {
+  height: auto;
+}
+.submit-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+
+
+
