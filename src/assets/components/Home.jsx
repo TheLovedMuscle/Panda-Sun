@@ -64,7 +64,7 @@ const Carousel = () => {
                   duration={3000}
                   className="Hover tag cursor-pointer"
                 >
-                  Hoe
+                  Home
                 </Link>
               </li>
               <li>
@@ -74,7 +74,7 @@ const Carousel = () => {
                   duration={3000}
                   className="Hover tag cursor-pointer"
                 >
-                  About_Us
+                  About Us
                 </Link>
               </li>
               <li>
